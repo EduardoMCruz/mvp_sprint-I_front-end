@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54,71));
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(35, 32, 24);
+    display: flex;
+    padding: 15px 0px;
+    color: white;
+    align-items: center;
+    
+}
+
+.newItem {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%;
+    position: center;
+
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newInput {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#newTelefone {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#newData_Consulta {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#newHora {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#newTipo {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1.5px solid rgb(35, 32, 24);
+    background: #6b5b5286;
+
+
+}
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgba(71, 179, 165,0.2);
+    border: 1px solid rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+
+.addBtn:hover {
+    background-color: rgb(47, 136, 124);
+    color: white;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    padding: 10px 20px;
+   
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.close:hover {
+    content: url("https://th.bing.com/th/id/OIP.NZlBvIvstRCpBho5HEUfDwHaHa?pid=ImgDet&rs=1");
+    width: 15px;
+    height: 15px; 
+}
+
+div#container {
+    overflow-x: auto;
+}
+
+.lixo {
+    content: url("https://cdn-icons-png.flaticon.com/512/126/126468.png");
+    width: 15px;
+    height: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: center;
+    padding: 12px 90px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th:nth-child(1) {
+    width: auto;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Agendamendo de Consulta</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Home Consultas</h1>
+        </div>
+                    
+    </header>
+<br>
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Paciente:">
+        <input type="text" id="newTelefone" placeholder="Telefone:">
+        <input type="date" id="newData_Consulta" placeholder="Data:">
+        <input type="time" id="newHora" placeholder="Hora:">
+        <input type="text" id="newTipo" placeholder="Consulta ou Retorno:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+
+    <!-- Tabela com items existentes -->
+    
+    <div id="container">
+        <section class="items">
+            <table id="myTable">
+                <tr>
+                    <th>Paciente</th>
+                    <th>Telefone</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Tipo</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
+
+
